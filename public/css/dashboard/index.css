@@ -1,0 +1,16 @@
+.about {
+    margin-top: 12vh;
+}
+p {
+    font-family: roboto;
+    line-height: 1.5;
+    margin-top: 3vh;
+}
+
+.experience {
+    margin-top: 10vh;
+}
+
+.experience h2 {
+    font-family: roboto;
+}

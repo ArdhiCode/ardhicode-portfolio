@@ -1,0 +1,79 @@
+body {
+    background-color: #202829;
+    overflow-x: hidden;
+}
+.background-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at 70% 70%,
+        rgba(126, 134, 133, 0.179),
+        transparent 40%
+    );
+    transition: background-position 0.05s;
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url("/font/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("/font/Roboto-Light.ttf") format("truetype");
+}
+
+.static-bar {
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 50vw;
+}
+
+.static-bar .identity {
+    position: absolute;
+    margin-left: 12vw;
+    margin-top: 7vh;
+}
+
+.static-bar h1 {
+    color: rgb(255, 255, 255);
+    font-family: roboto-bold;
+    font-size: 3vw;
+    margin-bottom: -1vh;
+}
+
+.static-bar h3 {
+    color: rgba(240, 248, 255, 0.927);
+    /* text-align: start; */
+    font-family: roboto;
+    font-size: 1.25vw;
+}
+
+.static-bar h4 {
+    color: rgba(240, 248, 255, 0.654);
+    text-align: start;
+    font-family: roboto;
+    font-size: 1vw;
+    margin-top: 5vh;
+}
+
+.nav {
+    color: rgba(240, 248, 255, 0.654);
+    text-align: start;
+    font-family: roboto;
+}
+
+.content {
+    width: 40vw;
+    height: 100vh;
+    margin-left: 50vw;
+    /* margin-top: 5vh; */
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+    color: rgba(255, 255, 255, 0.821);
+}
