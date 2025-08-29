@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Experience;
+use App\Models\Project;
 
 class DashboardController extends Controller
 {
@@ -12,9 +13,10 @@ class DashboardController extends Controller
     {
 
         $experiences = Experience::orderBy('date', 'desc')->take(7)->get();
+        $projects = Project::orderBy('date', 'desc')->take(7)->get();
         $data = [
             'title' => 'Dashboard | ArdhiCode',
-            'projects' => '',
+            'projects' => $projects,
             'experiences' => $experiences
         ];
         return view('dashboard.index', $data);

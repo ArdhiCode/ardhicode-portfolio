@@ -5,12 +5,79 @@ p {
     font-family: roboto;
     line-height: 1.5;
     margin-top: 3vh;
+    font-size: 1.25vw;
 }
 
+/* experience */
 .experience {
     margin-top: 10vh;
+    font-family: roboto-bold;
 }
 
 .experience h2 {
     font-family: roboto;
+}
+
+.experience-item {
+    padding-left: 1vw;
+    padding-top: 0.1vh;
+    padding-right: 1vw;
+    padding-bottom: 0.1vh;
+}
+.experience-item a {
+    text-decoration: none;
+    color: inherit;
+}
+.experience-item p {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1vw;
+}
+
+.experience-item:hover {
+    background-color: #ffffff13;
+    border-radius: 1vw;
+    cursor: pointer;
+    color: #a6abb0;
+}
+
+.experience-item:hover h3 {
+    color: #3fc9c2;
+}
+
+/* project     */
+.project {
+    margin-top: 10vh;
+    font-family: roboto-bold;
+}
+
+.project h2 {
+    font-family: roboto;
+}
+
+.project-item {
+    padding-left: 1vw;
+    padding-top: 0.1vh;
+    padding-right: 1vw;
+    padding-bottom: 0.1vh;
+}
+.project-item a {
+    text-decoration: none;
+    color: inherit;
+}
+.project-item p {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1vw;
+}
+
+.project-item:hover {
+    background-color: #ffffff13;
+    border-radius: 1vw;
+    cursor: pointer;
+    color: #a6abb0;
+}
+
+.project-item:hover h3 {
+    color: #3fc9c2;
 }

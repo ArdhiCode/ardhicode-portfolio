@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
 }
 .background-effect {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -15,6 +15,7 @@ body {
         transparent 40%
     );
     transition: background-position 0.05s;
+    z-index: -100;
 }
 
 @font-face {
@@ -32,6 +33,7 @@ body {
     overflow: hidden;
     height: 100vh;
     width: 50vw;
+    top: 0;
 }
 
 .static-bar .identity {
@@ -43,7 +45,7 @@ body {
 .static-bar h1 {
     color: rgb(255, 255, 255);
     font-family: roboto-bold;
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-bottom: -1vh;
 }
 
@@ -51,7 +53,7 @@ body {
     color: rgba(240, 248, 255, 0.927);
     /* text-align: start; */
     font-family: roboto;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .static-bar h4 {
